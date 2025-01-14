@@ -1,0 +1,86 @@
+{
+    "MessageCenter": [
+        {
+            "PutRequest": {
+                "Item": {
+                    "PartitionKey": {
+                        "S": "TENANT#ABCD#TO#CUSTOMER#ID12345678"
+                    },
+                    "SortKey": {
+                        "S": "MESSAGE#757bb245-513d-433a-9e4d-c98a8d2f9a11"
+                    },
+                    "Data": {
+                        "M": {
+                            "metaData": {
+                                "M": {
+                                    "tenantId": {
+                                        "S": ""
+                                    },
+                                    "isRead": {
+                                        "S": ""
+                                    },
+                                    "recipientId": {
+                                        "S": ""
+                                    },
+                                    "language": {
+                                        "S": ""
+                                    },
+                                    "additionalData": {
+                                        "L": [
+                                            {
+                                                "M": {
+                                                    "value": {
+                                                        "S": ""
+                                                    },
+                                                    "key": {
+                                                        "S": ""
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "attachments": {
+                                        "NULL": true
+                                    },
+                                    "sender": {
+                                        "S": "EMP1234"
+                                    },
+                                    "expiredDatetime": {
+                                        "S": ""
+                                    },
+                                    "recipient": {
+                                        "S": "ID12345678"
+                                    },
+                                    "createdDatetime": {
+                                        "S": ""
+                                    },
+                                    "id": {
+                                        "S": ""
+                                    },
+                                    "category": {
+                                        "S": ""
+                                    },
+                                    "title": {
+                                        "S": "ID12345678 to EMP1234"
+                                    },
+                                    "body": {
+                                        "S": "ID12345678 to EMP1234 body"
+                                    }
+                                }
+                            },
+                            "Type": {
+                                "S": "DIRECT"
+                            },
+                            "TargetKey": {
+                                "S": "TENANT#ABCD#TO#EMPLOYEE#GROUP#1234"
+                            },
+                            "Language": {
+                                "S": "EN"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
